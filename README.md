@@ -1,4 +1,4 @@
-# CryptoCompareAPIRESTProject
+# CryptoCompare API REST Project
 
 /!\ Lisez-bien ce README pour pouvoir utiliser le projet !!
 
