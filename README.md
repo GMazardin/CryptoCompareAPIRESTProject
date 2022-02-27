@@ -14,6 +14,7 @@ C'est dans ce résultat de type Root que vous retrouverez toutes les données à
 Pour plus de clarté dans les templates (car oui je sais dans le code c'est pas très clair mais je suis obligé de garder la même typo que l'API), n'hésitez pas à aller consulter la doc de l'API sur https://min-api.cryptocompare.com/documentation.
 
 Vous pourrez y faire des tests de requêtes qui vous montreront clairement la structure des données !
+
 J'ai choisi 4 requêtes pour l'instant dans cette documentation :
 1. Price > Multiple Symbols Full Data
 2. Historical > Minute Pair OHLCV
