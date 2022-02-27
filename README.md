@@ -3,7 +3,7 @@
 /!\ Lisez-bien ce README pour pouvoir utiliser le projet !!
 
 1. Démarrez la solution avec Rider/VSC
-2. Le projet sera en version .NET Framework 4.5.2
+2. Le projet est en version .NET Framework 4.5.2
 3. Il vous faudra ensuite installer deux NuGet Packages : RestSharp 106.15.0 et Newtonsoft.Json 13.0.1
 4. Normalement tout sera bon !
 
