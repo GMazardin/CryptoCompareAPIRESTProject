@@ -18,12 +18,23 @@ namespace CryptoCompareAPIProject
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 string RawResponse = response.Content;
-                Console.WriteLine(RawResponse);
+                //Console.WriteLine(RawResponse);
                 result = JsonConvert.DeserializeObject<Root>(RawResponse);
-                Console.WriteLine(result);
+                //Console.WriteLine(result.Data[0].RAW.EUR.LASTUPDATE);
+                for (int i = 0; i < result.Data.Count; i++)
+                {
+                    result.Data[i].RAW.EUR.LASTUPDATE = UnixTimeStampToDateTime(result.Data[i].RAW.EUR.LASTUPDATE);
+                }
+
+                //Console.WriteLine(result.Data[0].RAW.EUR.LASTUPDATE);
             }
 
             return result;
+        }
+
+        public static void test()
+        {
+            GetData();
         }
 
         public class Weiss
@@ -72,7 +83,7 @@ namespace CryptoCompareAPIProject
             public string TOSYMBOL { get; set; }
             public string FLAGS { get; set; }
             public double PRICE { get; set; }
-            public int LASTUPDATE { get; set; }
+            public string LASTUPDATE { get; set; }
             public double MEDIAN { get; set; }
             public double LASTVOLUME { get; set; }
             public double LASTVOLUMETO { get; set; }
@@ -148,6 +159,16 @@ namespace CryptoCompareAPIProject
             public List<Datum> Data { get; set; }
             public RateLimit RateLimit { get; set; }
             public bool HasWarning { get; set; }
+        }
+        
+        public static string UnixTimeStampToDateTime( string unixTimeStamp )
+        {
+            // Unix timestamp is seconds past epoch
+            DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            int temp = Convert.ToInt32(unixTimeStamp);
+            dateTime = dateTime.AddSeconds( temp ).ToLocalTime();
+            string result = Convert.ToString(dateTime);
+            return result;
         }
     }
 }
