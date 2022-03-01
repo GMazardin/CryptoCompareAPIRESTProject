@@ -8,7 +8,7 @@
         <OutputType>WinExe</OutputType>
         <RootNamespace>CryptoCompareAPIProject</RootNamespace>
         <AssemblyName>CryptoCompareAPIProject</AssemblyName>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
         <WarningLevel>4</WarningLevel>
@@ -34,6 +34,7 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="mscorlib" />
         <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
           <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
           <Private>True</Private>
@@ -42,9 +43,30 @@
           <HintPath>..\packages\RestSharp.106.15.0\lib\net452\RestSharp.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="ScottPlot, Version=4.1.33.0, Culture=neutral, PublicKeyToken=86698dc10387c39e">
+          <HintPath>..\packages\ScottPlot.4.1.33\lib\net461\ScottPlot.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="ScottPlot.WPF, Version=4.1.33.0, Culture=neutral, PublicKeyToken=e53b06131e34a3aa">
+          <HintPath>..\packages\ScottPlot.WPF.4.1.33\lib\net472\ScottPlot.WPF.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Drawing.Common.4.6.1\lib\net461\System.Drawing.Common.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System.Web" />
         <Reference Include="System.Xml" />
         <Reference Include="System.Xaml">
@@ -59,9 +81,19 @@
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
         </ApplicationDefinition>
+        <Compile Include="Graph.xaml.cs">
+          <DependentUpon>Graph.xaml</DependentUpon>
+        </Compile>
         <Compile Include="LatestNews.cs" />
         <Compile Include="MinuteOHLCV.cs" />
+        <Compile Include="NewsPage.xaml.cs">
+          <DependentUpon>NewsPage.xaml</DependentUpon>
+        </Compile>
         <Compile Include="ToplistMarketCap.cs" />
+        <Compile Include="TopMarketCap.xaml.cs">
+          <DependentUpon>TopMarketCap.xaml</DependentUpon>
+        </Compile>
+        <Page Include="Graph.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
@@ -74,6 +106,8 @@
             <DependentUpon>MainWindow.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Page Include="NewsPage.xaml" />
+        <Page Include="TopMarketCap.xaml" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="MultipleSymbolsFullData.cs" />
@@ -93,6 +127,7 @@
     <ItemGroup>
         <None Include="App.config" />
         <None Include="packages.config" />
+	<Content Include="finance_quickstart.png" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

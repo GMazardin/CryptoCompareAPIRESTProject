@@ -40,3 +40,16 @@ C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPI
 C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\CryptoCompareAPIProject.csproj.CopyComplete
 C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\CryptoCompareAPIProject.exe
 C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\CryptoCompareAPIProject.pdb
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\Graph.g.cs
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\NewsPage.g.cs
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\Graph.baml
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\NewsPage.baml
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\TopMarketCap.g.cs
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\TopMarketCap.baml
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\bin\Debug\ScottPlot.dll
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\bin\Debug\ScottPlot.WPF.dll
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\bin\Debug\System.Drawing.Common.dll
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\bin\Debug\System.ValueTuple.dll
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\bin\Debug\ScottPlot.xml
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\bin\Debug\System.ValueTuple.xml
+C:\Users\gmaza\RiderProjects\Projet\CryptoCompareAPIRESTProject\CryptoCompareAPIProject\obj\Debug\CryptoCompareAPIProject_Content.g.cs

@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptoCompareAPIProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="CryptoCompare API Project" Height="450" Width="800" Background="#181735">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" Height="50" VerticalAlignment="Top" Background="#0F0F2D" HorizontalAlignment="Center">
+            <Button Content="Top 30 Market Cap in EUR" Click="ButtonClickMKTCap" Background="#0F0F2D" Foreground="White" BorderThickness="0" FontFamily="Open Sans Bold"/>
+            <Button Content="BTC/EUR 30mn Graph" Margin="10,0,0,0" Click="ButtonClickGraph" Foreground="White" BorderThickness="0" Background="#0F0F2D" FontFamily="Open Sans Bold"/>
+            <Button Content="Latest News about Crypto" Margin="10,0,0,0" Click="ButtonClickNews" Foreground="White" BorderThickness="0" Background="#0F0F2D" FontFamily="Open Sans Bold"/>
+        </StackPanel>
+        <Frame Name="Main" Margin="0,50,0,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
